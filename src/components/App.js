@@ -1,5 +1,6 @@
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/Global";
+import Footer from "./Footer";
 
 const theme = {
   colors: {
@@ -16,6 +17,7 @@ function App() {
       <>
         <GlobalStyles />
         <h1>Notifications...</h1>
+        <Footer />
       </>
     </ThemeProvider>
   );
