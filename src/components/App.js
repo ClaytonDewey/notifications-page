@@ -1,10 +1,24 @@
-import "../App.scss";
+import { ThemeProvider } from "styled-components";
+import "../App.css";
+import GlobalStyles from "./styles/Global";
+
+const theme = {
+  colors: {
+    header: "#ebfbff",
+    body: "#fff",
+    footer: "#003333",
+  },
+  mobile: "768px",
+};
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello...</h1>
-    </div>
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyles />
+        <h1>Notifications...</h1>
+      </>
+    </ThemeProvider>
   );
 }
 
