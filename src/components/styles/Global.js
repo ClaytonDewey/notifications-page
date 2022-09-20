@@ -21,6 +21,11 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 1.5rem;
 }
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
 `;
 
 export default GlobalStyles;
